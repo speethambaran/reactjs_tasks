@@ -54,10 +54,8 @@ userRouter.post('/update-post/:id',auth,(req,res) =>{
    
     let caption = req.params.id
     let newcaption = req.body.caption
-   
     userController.updatePost(caption,newcaption).then((result)=>{
-        
-        res.send(result) 
+    res.send(result) 
     })
 
 })
