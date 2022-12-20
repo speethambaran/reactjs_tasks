@@ -50,15 +50,27 @@ userRouter.get('/get-post/:id',auth,(req,res)=>{
     })
 })
 
-userRouter.post('/update-post/:id',auth,(req,res) =>{
+// userRouter.post('/update-post/:id',auth,(req,res) =>{
    
-    let caption = req.params.id
-    let newcaption = req.body.caption
-    userController.updatePost(caption,newcaption).then((result)=>{
-    res.send(result) 
-    })
+//     let caption = req.params.id
+//     let newcaption = req.body.caption
+//     userController.updatePost(caption,newcaption).then((result)=>{
+//     res.send(result) 
+//     })
 
-})
+// })
+userRouter.put("/update-post/:id", auth, (req, res) => {
+  let id = req.params.id;
+  console.log(id)
+  let newdata = req.body;
+
+    userController.updatePost(id, newdata).then((result) => {
+
+        res.send(result);
+
+    });
+
+});
 
 
 
