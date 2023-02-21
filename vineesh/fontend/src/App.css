@@ -1,0 +1,117 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 32px;
+}
+
+th {
+  background-color: rgb(117, 201, 250);
+}
+
+td {
+  background-color: rgb(205, 235, 253);
+}
+
+form {
+  display: flex;
+  gap: 5px;
+}
+
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form * {
+  font-size: 28px;
+}
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.payment-form input[type="text"] {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.payment-form button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4287f5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.payment-form button[type="submit"]:hover {
+  background-color: #3378e7;
+}
+
+.payment-form .error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.payment-form .success {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
